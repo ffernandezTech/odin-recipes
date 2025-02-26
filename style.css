@@ -1,0 +1,57 @@
+h1{
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+*{
+    background-color: lightslategrey
+}
+a{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    
+}
+.ul-main, .ul-main li{
+    background-color: pink;
+    text-align: center;
+    list-style-type: none;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+p{
+    background-color: lightblue;
+    text-align: center;
+}
+h2{
+    font-family: "Times New Roman", sans-serif, Arial, serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.ul-ingredients{
+    list-style-type: square;
+    background-color: azure;
+    font-size: larger;
+
+}
+/* I wanted to have a background color for everything. But I noticed that 
+the list items also changed instead of following the unorder list style applied'
+so I just included every li under this class. */
+.ul-ingredients li{
+    list-style-type: square;
+    background-color: azure;
+    font-size: larger;  
+}
+
+/* checked to see if I could do it all in one set. 
+instead of of the way I did it above. */
+.ol-steps, .ol-steps li{
+    font-size: larger;
+    background-color: beige;
+
+}
