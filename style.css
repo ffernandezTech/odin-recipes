@@ -1,11 +1,18 @@
+*{
+    background-color: lightslategrey;
+    /* something you should include to help with spacing
+    box sizing (border-box) makes it so you can set the height and width on sections
+    and not have it increase by your padding. */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 h1{
     background-color: lightseagreen;
     text-align: center;
 }
 
-*{
-    background-color: lightslategrey
-}
+
 a{
     background-color: white;
     color: black;
