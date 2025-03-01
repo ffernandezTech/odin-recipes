@@ -1,64 +1,81 @@
-*{
-    background-color: lightslategrey;
-    /* something you should include to help with spacing
-    box sizing (border-box) makes it so you can set the height and width on sections
-    and not have it increase by your padding. */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    background-color: lightsalmon;
+    
 }
+/* above apparently the best way to make sure everything acts like a border box
+by default. Try to that and the below for padding and margin in all css files
+when making a website for best practice. */
+ /* something you should include to help with spacing
+    box sizing (border-box) makes it so you can set the height and width on sections
+    and not have it increase by your padding. */
 h1{
     background-color: lightseagreen;
     text-align: center;
+    width: 220px;
+    margin: auto;
 }
-
-
-a{
-    background-color: white;
-    color: black;
-    font-size: 25px;
-    
+h2{
+    font-family: "Times New Roman", sans-serif, Arial, serif;
+    font-size: 30px;
+    text-decoration: underline;
+    width: 170px;
+    margin: auto;
 }
-.ul-main, .ul-main li{
-    background-color: pink;
-    text-align: center;
-    list-style-type: none;
-}
-
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-p{
-    background-color: lightblue;
+a{
+   
+    text-decoration: none;
+    font-size: 25px;
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+}
+
+div{
+    margin: auto;
+    align-items: center;
+    padding: 40px;
+    font-size: 20px;
+
+    
+}
+.ul-main{
+    list-style-type: none;
     text-align: center;
 }
-h2{
-    font-family: "Times New Roman", sans-serif, Arial, serif;
-    font-size: 30px;
-    text-decoration: underline;
+ul{
+    list-style-position: inside;
+   
+   
 }
-.ul-ingredients{
-    list-style-type: square;
-    background-color: azure;
-    font-size: larger;
-
+ol{
+    list-style-position: inside;
+   
 }
-/* I wanted to have a background color for everything. But I noticed that 
-the list items also changed instead of following the unorder list style applied'
-so I just included every li under this class. */
-.ul-ingredients li{
-    list-style-type: square;
-    background-color: azure;
-    font-size: larger;  
+li{
+    margin-bottom: 10px;
+    color: white;
 }
 
-/* checked to see if I could do it all in one set. 
-instead of of the way I did it above. */
-.ol-steps, .ol-steps li{
-    font-size: larger;
-    background-color: beige;
+.descrip-div,
+.ingredients-div,
+.steps-div{
+    width: 550px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 50px;
 
+}
+.link-div{
+    text-align: center;
 }
