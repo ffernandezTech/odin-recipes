@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background-color: lightsalmon;
+    background-color: #990011;
     
 }
 /* above apparently the best way to make sure everything acts like a border box
@@ -14,10 +14,13 @@ when making a website for best practice. */
     box sizing (border-box) makes it so you can set the height and width on sections
     and not have it increase by your padding. */
 h1{
-    background-color: lightseagreen;
+    
     text-align: center;
     width: 220px;
     margin: auto;
+    text-decoration: underline;
+    color: #FCF6F5;
+    margin-bottom: 10px;
 }
 h2{
     font-family: "Times New Roman", sans-serif, Arial, serif;
@@ -25,20 +28,35 @@ h2{
     text-decoration: underline;
     width: 170px;
     margin: auto;
+    background-color: #FCF6F5;
 }
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 20px black double;
     width: 50%;
+    height: auto;
 }
+/* I shouldnt do this. But because the only paragraphs Im using is for this section
+customizing like this make it easy.
+I could have done inline styles for each or made a class. But this was easier
+ */
+
+p{
+    background-color: #FCF6F5;
+}
+
+
 a{
    
     text-decoration: none;
     font-size: 25px;
     display: inline-block;
     align-items: center;
-    background-color: white;
+    border: 10px black double;
+    padding: 10px;
+    background-color: #FCF6F5;
 }
 
 div{
@@ -46,34 +64,38 @@ div{
     align-items: center;
     padding: 40px;
     font-size: 20px;
+    width: 80%;
+    height: auto;
 
     
 }
 .ul-main{
     list-style-type: none;
     text-align: center;
+    border: black 10px double;
 }
-ul{
-    list-style-position: inside;
-   
-   
-}
-ol{
-    list-style-position: inside;
-   
-}
-li{
-    margin-bottom: 10px;
-    color: white;
-}
+/* getting all the unorder list/order list plus their items and setting the same style for them */
 
+ul,
+ul li,
+ol,
+ol li{
+    list-style-position: inside;
+    background-color:  #FCF6F5;
+    margin-bottom: 10px;  
+}
+/* .dish-info, */
 .descrip-div,
 .ingredients-div,
 .steps-div{
-    width: 550px;
-    height: auto;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 10px;
     padding: 20px;
-    margin-bottom: 50px;
+    color: black;
+    border: 10px black double;
+    background-color: #FCF6F5;
+
 
 }
 .link-div{
