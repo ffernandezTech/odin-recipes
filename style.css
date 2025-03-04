@@ -15,12 +15,12 @@ when making a website for best practice. */
     and not have it increase by your padding. */
 h1{
     
-    text-align: center;
-    width: 220px;
-    margin: auto;
+    /* text-align: center; */
+    /* width: 220px;
+    margin: auto; */
     text-decoration: underline;
     color: #FCF6F5;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 h2{
     font-family: "Times New Roman", sans-serif, Arial, serif;
@@ -31,11 +31,8 @@ h2{
     background-color: #FCF6F5;
 }
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     border: 20px black double;
-    width: 50%;
+    width: 200px;
     height: auto;
 }
 /* I shouldnt do this. But because the only paragraphs Im using is for this section
@@ -101,3 +98,51 @@ ol li{
 .link-div{
     text-align: center;
 }
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
+.dish-info{
+    display: flex;
+    border: black 10px double;
+    flex-direction: row;
+    justify-content:flex-start;
+   
+    
+
+}
+.dish-info>img{
+    flex-shrink: 7;
+    margin-right: 50px;
+    margin-left: 0px;
+}
+.descrip-div{
+    display: flex;
+   
+    flex-direction: column;
+    flex: 1 1 0;
+
+}
+.descrip-div>h1{
+    color: black;
+    background-color: #FCF6F5;
+    align-self: center;
+    padding: 20px;
+    font-size: 70px;
+    
+}
+@media screen and (min-width:600px) {
+    .dish-info{
+        flex-wrap: wrap;
+        
+        
+    }
+    .dish-info>img{
+        margin-right: 120px;
+        margin-left: auto;
+        
+    }
+}
+
+
